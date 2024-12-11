@@ -12,15 +12,15 @@ class DatabaseHelper {
 
   Future<Database> initDatabase() async {
     var dbPath = await getDatabasesPath();
-    String path = join(dbPath, 'cashio.db');
+    String path = join(dbPath, 'sweetbliss.db');
     return await openDatabase(path, version: 1, onCreate: (db, version) {
       db.execute('''CREATE TABLE usuarios (
         id_usuario INTEGER PRIMARY KEY AUTOINCREMENT,
         email TEXT NOT NULL UNIQUE,
         password TEXT NOT NULL,
         nombre TEXT NOT NULL,
-        primer_apellido TEXT NOT NULL,
-        segundo_apellido TEXT
+        direccion TEXT NOT NULL,
+        telefono TEXT
       )''');
     });
   }

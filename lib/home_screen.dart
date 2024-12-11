@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
             label: 'Perfil',
           ),
         ],
-        selectedItemColor: Color(0xFF376C5C), // Color de los íconos seleccionados
+        selectedItemColor: Color(0xFFFFC1CC ), // Color de los íconos seleccionados
         unselectedItemColor: Color(0xFF376C5C),  // Color de los íconos no seleccionados
       ),
     );

@@ -108,8 +108,8 @@ class _LoginScreenState extends State<LoginScreen> {
       'email': email,
       'password': password,
       'nombre': nombre,
-      'primer_apellido': primerApellido,
-      'segundo_apellido': segundoApellido,
+      'direccion': primerApellido,
+      'telefono': segundoApellido,
     });
 
     setState(() {
